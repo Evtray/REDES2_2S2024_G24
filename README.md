@@ -1577,3 +1577,242 @@ SW20_G24(config-if)# switchport port-security mac-address 0040.0B36.7305
 SW20_G24(config-if)# exit
 SW20_G24(config)# do write
 ```
+## Configuración de STP
+### PVST por defecto.
+### Configuración de Rapid PVST
+### SW1_G4
+```bash
+SW1_G24> enable
+SW1_G24# configure terminal
+SW1_G24(config)# spanning-tree mode rapid-pvst
+SW1_G24(config)# end
+SW1_G24# copy running-config startup-config
+```
+
+### SW2_G4
+```bash
+SW2_G24> enable
+SW2_G24# configure terminal
+SW2_G24(config)# spanning-tree mode rapid-pvst
+SW2_G24(config)# end
+SW2_G24# copy running-config startup-config
+```
+
+### SW3_G4
+```bash
+SW3_G24> enable
+SW3_G24# configure terminal
+SW3_G24(config)# spanning-tree mode rapid-pvst
+SW3_G24(config)# end
+SW3_G24# copy running-config startup-config
+```
+
+### SW4_G4
+```bash
+SW4_G24> enable
+SW4_G24# configure terminal
+SW4_G24(config)# spanning-tree mode rapid-pvst
+SW4_G24(config)# end
+SW4_G24# copy running-config startup-config
+```
+
+### SW5_G4
+```bash
+SW5_G24> enable
+SW5_G24# configure terminal
+SW5_G24(config)# spanning-tree mode rapid-pvst
+SW5_G24(config)# end
+SW5_G24# copy running-config startup-config
+```
+
+### SW6_G4
+```bash
+SW6_G24> enable
+SW6_G24# configure terminal
+SW6_G24(config)# spanning-tree mode rapid-pvst
+SW6_G24(config)# end
+SW6_G24# copy running-config startup-config
+```
+
+### SW7_G4
+```bash
+SW7_G24> enable
+SW7_G24# configure terminal
+SW7_G24(config)# spanning-tree mode rapid-pvst
+SW7_G24(config)# end
+SW7_G24# copy running-config startup-config
+```
+
+### SW8_G4
+```bash
+SW8_G24> enable
+SW8_G24# configure terminal
+SW8_G24(config)# spanning-tree mode rapid-pvst
+SW8_G24(config)# end
+SW8_G24# copy running-config startup-config
+```
+
+### SW9_G4
+```bash
+SW9_G24> enable
+SW9_G24# configure terminal
+SW9_G24(config)# spanning-tree mode rapid-pvst
+SW9_G24(config)# end
+SW9_G24# copy running-config startup-config
+```
+
+### SW10_G4
+```bash
+SW10_G24> enable
+SW10_G24# configure terminal
+SW10_G24(config)# spanning-tree mode rapid-pvst
+SW10_G24(config)# end
+SW10_G24# copy running-config startup-config
+```
+
+### SW11_G4
+```bash
+SW11_G24> enable
+SW11_G24# configure terminal
+SW11_G24(config)# spanning-tree mode rapid-pvst
+SW11_G24(config)# end
+SW11_G24# copy running-config startup-config
+```
+
+### SW12_G4
+```bash
+SW12_G24> enable
+SW12_G24# configure terminal
+SW12_G24(config)# spanning-tree mode rapid-pvst
+SW12_G24(config)# end
+SW12_G24# copy running-config startup-config
+```
+
+### SW13_G4
+```bash
+SW13_G24> enable
+SW13_G24# configure terminal
+SW13_G24(config)# spanning-tree mode rapid-pvst
+SW13_G24(config)# end
+SW13_G24# copy running-config startup-config
+```
+
+### SW14_G4
+```bash
+SW14_G24> enable
+SW14_G24# configure terminal
+SW14_G24(config)# spanning-tree mode rapid-pvst
+SW14_G24(config)# end
+SW14_G24# copy running-config startup-config
+```
+
+### SW15_G4
+```bash
+SW15_G24> enable
+SW15_G24# configure terminal
+SW15_G24(config)# spanning-tree mode rapid-pvst
+SW15_G24(config)# end
+SW15_G24# copy running-config startup-config
+```
+
+### SW16_G4
+```bash
+SW16_G24> enable
+SW16_G24# configure terminal
+SW16_G24(config)# spanning-tree mode rapid-pvst
+SW16_G24(config)# end
+SW16_G24# copy running-config startup-config
+```
+
+### SW17_G4
+```bash
+SW17_G24> enable
+SW17_G24# configure terminal
+SW17_G24(config)# spanning-tree mode rapid-pvst
+SW17_G24(config)# end
+SW17_G24# copy running-config startup-config
+```
+
+### SW18_G4
+```bash
+SW18_G24> enable
+SW18_G24# configure terminal
+SW18_G24(config)# spanning-tree mode rapid-pvst
+SW18_G24(config)# end
+SW18_G24# copy running-config startup-config
+```
+
+### SW19_G4
+```bash
+SW19_G24> enable
+SW19_G24# configure terminal
+SW19_G24(config)# spanning-tree mode rapid-pvst
+SW19_G24(config)# end
+SW19_G24# copy running-config startup-config
+```
+
+### SW20_G4
+```bash
+SW20_G24> enable
+SW20_G24# configure terminal
+SW20_G24(config)# spanning-tree mode rapid-pvst
+SW20_G24(config)# end
+SW20_G24# copy running-config startup-config
+```
+
+### SW21_G4
+```bash
+SW21_G24> enable
+SW21_G24# configure terminal
+SW21_G24(config)# spanning-tree mode rapid-pvst
+SW21_G24(config)# end
+SW21_G24# copy running-config startup-config
+```
+
+## Convergencia PVST vrs RPVST
+| Escenario     | Protocolo STP  | Primaria | Básicos | Diversificado
+|:------- | :------- | :-----: | :-----: | :-----: | :-----: |
+| 1| PVST | 33s | 60s | 34.72s |
+| 2| Rapid PVST | 8.73s | 7.64s | 0s |
+
+## Conclusion
+Basados en los tiempos de convergencia registrados, en general, los tiempos de RPVST son menores y, en ocasiones, casi nulos, por lo que RPVST sería la mejor opción para esta topología.
+
+## Historial de pings y tiempos
+## PSVT
+### Primaria
+#### PC1 192.168.16.3 
+#### PC2 192.168.16.5
+#### SW7_G24 fa0/1
+![configuracion host](./images/pvst_primaria.png)
+
+### Básicos
+#### PC1 192.168.26.2 
+#### PC2 192.168.26.3
+#### SW4_G24 fa0/1
+![configuracion host](./images/pvst_basicos.png)
+
+### Diversificado
+#### PC1 192.168.36.3 
+#### PC2 192.168.36.5
+#### SW10_G24 fa0/1
+![configuracion host](./images/pvst_diversificado.png)
+
+## Rapid PSVT
+### Primaria
+#### PC1 192.168.16.3 
+#### PC2 192.168.16.5
+#### SW7_G24 fa0/1
+![configuracion host](./images/rpvst_primaria.png)
+
+### Básicos
+#### PC1 192.168.26.2 
+#### PC2 192.168.26.3
+#### SW4_G24 fa0/1
+![configuracion host](./images/pvst_basicos.png)
+
+### Diversificado
+#### PC1 192.168.36.3 
+#### PC2 192.168.36.5
+#### SW10_G24 fa0/1
+![configuracion host](./images/rpvst_diversificado.png)
