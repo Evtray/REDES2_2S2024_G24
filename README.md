@@ -1771,7 +1771,7 @@ SW21_G24# copy running-config startup-config
 
 ## Convergencia PVST vrs RPVST
 | Escenario     | Protocolo STP  | Primaria | Básicos | Diversificado
-|:------- | :------- | :-----: | :-----: | :-----: | :-----: |
+|:------- | :------- | :-----: | :-----: | :-----: |
 | 1| PVST | 33s | 60s | 34.72s |
 | 2| Rapid PVST | 8.73s | 7.64s | 0s |
 
@@ -1803,13 +1803,13 @@ Basados en los tiempos de convergencia registrados, en general, los tiempos de R
 #### PC1 192.168.16.3 
 #### PC2 192.168.16.5
 #### SW7_G24 fa0/1
-![configuracion host](./images/rpvst_primaria.png)
+![configuracion host](./images/rpvst_basicos.png)
 
 ### Básicos
 #### PC1 192.168.26.2 
 #### PC2 192.168.26.3
 #### SW4_G24 fa0/1
-![configuracion host](./images/pvst_basicos.png)
+![configuracion host](./images/rpvst_basicos.png)
 
 ### Diversificado
 #### PC1 192.168.36.3 
